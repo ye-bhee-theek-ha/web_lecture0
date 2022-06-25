@@ -20,6 +20,18 @@ body {
     /* improve size alignining */
   }
 
+  .submit {
+    border: none;
+    background-color: rgba(236, 240, 243, 0.5);
+    width: 130px;
+    height: 40px;
+    margin: 20px 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: rgba(24, 22, 22, 1);
+
+  }
+
   .search {
     height:500px;
     width: 100%;
@@ -33,7 +45,11 @@ body {
 
 </head>
 <body>
-    <form class="search" action="index.html" method="post">
-      <input id="input" type="text" name="input" placeholder="enter text" >
+    <form class="search" action="https://www.google.com/search">
+      <input id="input" type="text" name="q" placeholder="enter text" >
+      <div>
+        <input class="submit" type="submit" name="btnK" value="Google Search">
+        <input class="submit" type="submit" name="btnI" value="I'm Feeling Lucky">
+      </div>
     </form>
 </body>
