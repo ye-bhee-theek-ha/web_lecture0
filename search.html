@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   <title> Search </title>
 
   <style media="screen">
-
-body {
-  display: flex;
-}
+  body {
+    display: flex;
+    background-image: url("assets/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
 
   #input {
     width: 50%;
     height: 30px;
     font-size: 19px;
-    border-style: groove;
+    color: black;
+
+
+    border: none;
+    /* border-style: groove;
     border-color: rgb(190,190,190);
-    border-width: 1px;
+    border-width: 1px; */
     padding: 4px 20px;
     border-radius: 20px ;
+    background-color: rgba(255, 256, 256, 0.4);
     /* improve size alignining */
   }
 
   .submit {
     border: none;
-    background-color: rgba(236, 240, 243, 0.5);
+    background-color: rgba(255, 256, 256, 0.4);
     width: 130px;
     height: 40px;
     margin: 20px 5px;
@@ -45,11 +55,11 @@ body {
 
 </head>
 <body>
-    <form class="search" action="https://www.google.com/search">
-      <input id="input" type="text" name="q" placeholder="enter text" >
-      <div>
-        <input class="submit" type="submit" name="btnK" value="Google Search">
-        <input class="submit" type="submit" name="btnI" value="I'm Feeling Lucky">
-      </div>
-    </form>
+  <form class="search" action="https://www.google.com/search">
+    <input id="input" type="text" name="q" placeholder="enter text" >
+    <div>
+      <input class="submit" type="submit" name="btnK" value="Google Search">
+      <input class="submit" type="submit" name="btnI" value="I'm Feeling Lucky">
+    </div>
+  </form>
 </body>
