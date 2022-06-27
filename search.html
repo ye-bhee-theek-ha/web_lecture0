@@ -13,8 +13,17 @@
     background-attachment: fixed;
   }
 
-  #input {
+  .input {
     width: 50%;
+    height: 30px;
+    font-size: 19px;
+    color: black;
+    border: none;
+    background-color: rgba(255, 256, 256, 0.4);
+  }
+
+  #input {
+    width: 100%;
     height: 30px;
     font-size: 19px;
     color: black;
@@ -24,9 +33,7 @@
     /* border-style: groove;
     border-color: rgb(190,190,190);
     border-width: 1px; */
-    padding: 4px 20px;
-    border-radius: 20px ;
-    background-color: rgba(255, 256, 256, 0.4);
+    background-color: rgba(255, 256, 256, 0);
     /* improve size alignining */
   }
 
@@ -56,7 +63,10 @@
 </head>
 <body>
   <form class="search" action="https://www.google.com/search">
-    <input id="input" type="text" name="q" placeholder="enter text" >
+    <div class="input">
+      <i class="material-icons"> search </i>
+      <input id="input" type="text" name="q" placeholder="enter text" >
+    </div>
     <div>
       <input class="submit" type="submit" name="btnK" value="Google Search">
       <input class="submit" type="submit" name="btnI" value="I'm Feeling Lucky">
